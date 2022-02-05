@@ -135,10 +135,59 @@ let auditTime = function (){
      if (moment().isBetween(hour17, hour18)) {
         $("#timeblock17").addClass("present");
     }
-    else if (moment().isAfter(hour18)) {
+    else if (moment().isAfter(hour17)) {
         $("#timeblock17").addClass("past");
     }
     else {
         $("#timeblock17").addClass("future");
     };
 };
+// End Audit Timeblock
+
+// Add delete event function for each time block
+$("#save-delete9").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour9");
+    $("#eventblock9").val("");
+})
+
+$("#save-delete10").on("click", "i.fa-trash", function (){
+localStorage.removeItem("hour10");
+$("#eventblock10").val("");
+})
+
+$("#save-delete11").on("click", "i.fa-trash", function(){
+    localStorage.removeItem("hour11");
+    $("#eventblock11").val("");
+})
+
+$("#save-delete12").on("click", "i.fa-trash", function(){
+    localStorage.removeItem("hour12");
+    $("#eventblock12").val("");
+})
+
+$("#save-delete13").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour13");
+    $("#eventblock13").val("");
+})
+
+$("#save-delete14").on("click", "i.fa-trash", function(){
+    localStorage.removeItem("hour14");
+    $("#eventblock14").val("");
+})
+
+$("#save-delete15").on("click", "i.fa-trash", function(){
+    localStorage.removeItem("hour15");
+    $("#eventblock15").val("");
+})
+
+$("#save-delete16").on("click", "i.fa-trash", function(){
+    localStorage.removeItem("hour16");
+    $("#eventblock16").val("")
+})
+
+$("#save-delete17").on("click", "i.fa-trash", function () {
+    localStorage.removeItem("hour17");
+    $("#eventblock17").val("");
+})
+// End delete event functions
+
