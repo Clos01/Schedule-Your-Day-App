@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color: #d4dfd2;
   }
   
   textarea{
@@ -20,7 +21,11 @@ body {
     border-radius: 0;
     border-bottom: 10px solid black;
   }
-  
+  ul.event-group {
+    min-height: 75px;
+    margin: 0;
+    list-style-type: none;
+  }
   .description{
     white-space: pre-wrap;
   }
@@ -28,7 +33,7 @@ body {
   .time-block{
     text-align: center;
     border-radius: 15px;
-  }
+    }
   
   .row {
     white-space: pre-wrap;
@@ -37,12 +42,66 @@ body {
   }
   
   .hour {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #759e7f;
+    color: #eeeeee;
     border-top: 1px dashed #000000;
+    padding-top: 15px;
   }
   
   .past {
-    background-color: #d3d3d3;
+    background-color: #e7e55dc2;
     color: white;
+  }
+  
+  .present {
+    background-color: #ff6961;
+    color: white;
+  }
+  
+  .future {
+    background-color: #77dd77;
+    color: white;
+  }
+
+  .save-delete {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0fccf7;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+  }
+  
+  .save-delete i.fa-save{
+    font-size: 40px;
+  }
+  
+  .save-delete i.fa-save:hover {
+    font-size: 50px;
+    color: #3cff0b;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .save-delete i.fa-trash{
+    font-size: 25px;
+    padding-left: 8px;
+  }
+
+  .save-delete i.fa-trash:hover {
+    font-size: 25px;
+    color: #ff0000b9;
+    transition: all .5s ease-in-out;
+   cursor: pointer;
+  }
+  .event-group{
+    padding: 14px 0 0 2px;
+  }
+  .events{
+    margin: 0;
+    height: 75px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 22px;
   }
