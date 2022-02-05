@@ -236,3 +236,12 @@ $("#save-delete17").on("click", "i.fa-save", function(){
 })
 // End save event functions
 
+setInterval(function () {
+    $(".event-group .events").each(function (index, el) {
+        auditTime(el);
+      
+    });
+
+}, (1000 * 60)); // 1000ms x 60 = 1 minute x 30 = 30 minutes
+
+auditTime();
